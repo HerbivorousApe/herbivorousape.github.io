@@ -1,0 +1,214 @@
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+nav {
+    grid-area:nav;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    z-index:20;
+  background:rgba(0, 0, 0, 0.7);
+  box-shadow:inset 0px -1px 2px 0px rgba(255, 255, 255, .8);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  }
+  nav a {
+    display: block;
+    padding:10px 3%;
+    max-height:20px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  nav a:hover {
+    background:rgba(230, 230, 230, 0.7);
+  box-shadow:inset 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+  color: black;
+  }
+
+
+
+
+
+  #welcome {
+    position:relative;
+    padding: 30vh 0 0;
+    height:70vh;
+    top:0;
+    left:0;
+    text-align:center;
+    background-color: #444;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    
+    background-image: url('../images/pexels-adrien-olichon-2387793.gif');
+
+  background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+#about, #portfolio, #contact {
+  padding: 40px 5vw 5vh;
+  margin-top:-40px;
+  max-width: 1300px;
+  background-color: white;
+}
+
+
+
+
+
+.tech-icon img {
+    width: 12px;
+    height: 12px;
+}
+
+
+
+#projects {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+  }
+
+.project {
+    width: 300px;
+    max-width: 300px;
+    border:1px solid rgb(82, 82, 82);
+    border-radius:2%;
+    padding: 0vh 1vw 1vh;
+    margin: 2vh 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.project:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+    display: block;
+    max-width: 80%;
+    border:3px solid green;
+    border-radius:5%;
+    margin:0 auto;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 10vh;
+  left: 5vw;
+  height: 75vh;
+  width: 80vw;
+  max-width: 1300px;
+  background: white;
+  border: solid 1px #000;
+  z-index: 1000;
+
+  padding: 5vh 5vw;
+  border-radius:1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 40px 0 rgba(0, 0, 0, 0.8);
+
+  overflow: auto;
+}
+
+#x {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+#x a {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+}
+
+.modal-links {
+  position: block;
+  left: -55vw;
+  bottom: 0;
+}
+
+
+
+.modal-links a {
+    display: block;
+    padding:10px 3%;
+    width:100%;
+    max-height:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .modal-links a:hover {
+    background:rgba(230, 230, 230, 0.7);
+  
+  color: black;
+  }
+
+
+
+#bugs, #calculator, #soundboard, #choropleth {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .project {
+    width: 300px;
+    max-width: 300px;
+} 
+
+#modal {
+  height: 90%;
+  width: 90%;
+  max-width: 90%;
+  top: 0;
+  left: 0;
+  border-radius:0;
+  
+}
+
+.modal-links a {
+  display: block;
+  padding:10px 3%;
+  width:100%;
+  overflow: hidden;
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+#about, #portfolio, #contact {
+  
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+}
+
+
+
+/*#modal {
+  left: 50%;
+  margin-left: -756px;
+}*/
+
+}

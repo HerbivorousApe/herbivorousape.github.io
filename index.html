@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Jason Bitterman Portfolio</title> 
+</head>
+<body>
+
+
+    <main>
+        <section id="welcome">
+            <div id="welcome-text">
+                <h1>Jason Bitterman - Software Developer</h1>
+                <p>Hello, my name is Jason Bitterman.</p>
+                <p>I am seeking employment as a Software Developer.</p>
+                <p>Thank you for your consideration in viewing my portfolio below.</p>
+            </div>
+            <div id="welcome-background"></div>
+
+        </section>
+        <nav id="nav">
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="mailto:jason.bitterman@gmail.com?subject=PORTFOLIO_INQUIRY:">Contact</a>
+        </nav>
+        <section id="about" class="anchor">
+            <h2>About Me</h2>
+            <img class="about-image" src="images/me.png" alt="A picture of Jason Bitterman, ordinary human software developer.">
+            <p>I am passionate about process improvement and raising the bar of quality. Best practices and thorough documentation are my jam. I have lived under the Lean Six Sigma and SAFe methods; I found aid and comfort in both. Structured methodologies, templates, best practices; these are the sword, shield, and armor used to fight chaos – and that is something over which I tend to geek out.</p>
+            <p>I am anxious to get my hands dirty – to resume learning outside of the classroom, to rejoin a team; to charge into a project I know little about and pop out adept on the other side.</p>
+            <p><a href="https://www.linkedin.com/in/jason-bitterman" target="_blank">My LinkedIn profile</a> contains an outline of a large portion of my professional experience, skill sets, recommendations, and a list of recently acquired certifications. I keep my progress updated there.</p>
+            <p id="about-more-link" class="more-or-less" onclick="showMore('about-more', 'about-more-link')">more</p>
+            <div id="about-more">
+                <p id="about-less-link" class="more-or-less" onclick="showLess('about-more', 'about-more-link')">less</p>
+                <p>I have been programming most of my life. From ‘GOTO 10’ loops on my brother’s TRS 80 when I was six, typing code from magazines on the C64 to ‘load’ simple games, creating Mad-Libs in QBasic, and publishing websites to AOL at the speed of 56kbps.</p>
+                <p>In my professional career I began by developing batch files to streamline installations and migrations for desktop and tech support. My years as a webmaster involved design, development, maintenance of websites, email, and domain services. As a Performance Analyst I designed and developed ETL systems for reporting and data analysis. My time as a Software Engineer immersed me into all things SAFe, involving full stack support of dozens of legacy applications and QA lead duties for flagship projects.</p>
+                <p>My current chapter involves studying as best I can the range of skills to fill in any gaps, and expand my knowledge base, acquiring certifications where relevant. I am in the process of applying this knowledge building practice projects, to enhance understanding, and to build a better portfolio.</p>
+            </div>
+        </section>
+        <section id="portfolio" class="anchor">
+            <h2>Portfolio</h2>
+            <p>Below are a few recent projects, most created as part of certification testing.</p>
+            <div id="projects">
+                <div class="project" onclick="showModal('bugs')">
+                    <h3>BUGS!</h3>
+                    <img class="project-image" src="images/bugs-ss.png" alt="Screen Shot for the game, BUGS!">
+                    <p>A simple game using JavaScript and a mix of libraries.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="fab fa-bootstrap tech-icon"></span>Bootstrap.js, 
+                        <span class="tech-icon"><img src="images/jQuery-icon.png"></span>jQuery.js, 
+                        <span class="fab fa-font-awesome tech-icon"></span>FontAwesome.js, 
+                        Animate.css
+                    </div>
+                </div>
+                <div class="project" onclick="showModal('calculator')">
+                    <h3>Calculator</h3>
+                    <img class="project-image" src="images/calculator-ss.png" alt="Screen Shot for a calculator application.">
+                    <p>A basic calculator coded from scratch in React.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="fab fa-bootstrap tech-icon"></span>Bootstrap.js, 
+                        <span class="fab fa-react tech-icon"></span>React.js
+                    </div>
+                </div>
+                <div class="project" onclick="showModal('soundboard')">
+                    <h3>Soundboard</h3>
+                    <img class="project-image" src="images/drummachine-ss.png" alt="Screen Shot for a soundboard reading: ">
+                    <p>A data-driven soundboard created in React with mouse and keyboard interface.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="fab fa-react tech-icon"></span>React.js
+                    </div>
+                </div>
+
+<!--
+
+               <div class="project" onclick="showModal('pomodoro')">
+                    <h3>Pomodoro Clock</h3>
+                    <img class="project-image" src="images/pomodoro-ss.png" alt="Screen shot of a map of the United States">
+                    <p>A functional pomodoro (tomato) clock.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="fab fa-bootstrap tech-icon"></span>Bootstrap.js, 
+                        <span class="fab fa-react tech-icon"></span>React.js
+                    </div>
+                </div>
+
+                <div class="project" onclick="showModal('treemap')">
+                    <h3>Treemap</h3>
+                    <img class="project-image" src="images/treemap-ss.png" alt="Screen shot of a treemap of the highest grossing films of all time.">
+                    <p>A treemap of the highest grossing films of all time.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="tech-icon"><img src="images/D3-icon.png"></span>D3.js, 
+                    </div>
+                </div>
+
+
+
+
+                <div class="project" onclick="showModal('choropleth')">
+                    <h3>Choropleth Map</h3>
+                    <img class="project-image" src="images/choropleth-ss.png" alt="Screen shot of a map of the United States">
+                    <p>A choropleth map of the percentage of the population holding bacelor's degrees in the United States.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="tech-icon"><img src="images/D3-icon.png"></span>D3.js, 
+                    </div>
+                </div>
+
+--> 
+
+            </div>
+        </section>
+        <section id="modal-container">
+            <div id="modal" class="fadein">
+                <div id="x"><a onclick="closeModal()">X</a></div>
+
+                    <div id="bugs">
+                        <h3>BUGS!</h3>
+                        <img src="images/bugs-animation.gif" class="modal-image">
+                        <p>While studying for my <a href="https://www.freecodecamp.org/certification/jason-bitterman/front-end-libraries" target="_blank">Front End Libraries certification</a> I decided to take a break to apply some of the covered material. I wanted to create a game.</p>
+                        <p>What I settled on was <a href="https://codepen.io/herbivorousape/pen/JjGXgar" target="_blank">BUGS!</a> a very basic, somewhat <em>buggy</em>, whack-a-mole type. Ten hours, and about 300 lines of code later, I had it. </p>
+                        <p>This was an interesting exercise, allowing me to reacquaint with jQuery – which I had not used since my webmaster days, stretch my vanilla JavaScript muscles, and play around with incorporating other libraries – something I typically avoid if I can help it. </p>
+                        <p>I learned I’d rather work without jQuery, and that I really like Bootstrap. Animate.css was unnecessary, but helpful – Font Awesome was even less necessary, and less helpful. Though, I am happy to have the experience with all of it.</p>
+                        <p>Short of a few code snippets in my old toolbox, this was my first real experience using setInverval to step through functions, which, is incredibly simple, incredibly powerful.</p>
+                        <p>I am especially happy with the dynamically created grid, the, (admittedly imperfect, but present), scalability, randomized animations pulling from arrays. I recall overcoming challenges such as being able to continue accumulating points after time ran out, and being able to squish bugs when paused.</p>
+                        <p>Looking at it now there are things I would do differently – I still have an itch to expand functionality, and may one day. For now, it’s my first non-text-based game. I built it from scratch. I learned a lot, including a bit more about of what I am capable. </p>
+
+                        <div class="modal-links">
+                            <a href="https://codepen.io/herbivorousape/pen/JjGXgar" target="_blank">Game/Code Link</a>
+                        </div>
+                    </div>
+
+                    <div id="calculator">
+                        <h3>Calculator</h3>
+                        <img src="images/calculator-animation.gif" class="modal-image">
+                        <p>&quot;Hello, World!&quot;, the calculator exclaimed. &quot;Hello Calculator&quot;, the world labeled back.</p>
+                        <p>This application originates from a <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator" target="_blank">Free Code Camp, Front End Libraries, certification project</a>.</p>
+                        <p>There isn’t much to it on the surface. A basic calculator in function; layout roughly mirroring the keypad on my keyboard, with a ‘clear’ option where the Num Lock should be. Keys are clickable and bound to their keyboard counterparts, with ’c’ triggering clear.</p>
+                        <p>The aesthetic is somewhat styled around an older model calculator with green LED display. Bootstrap CSS made short work of the styling.</p>
+                        <p>React was used; more for practice than necessity, but it was helpful in execution, and in gaining familiarity with the library.</p>
+                        <p>I initially thought building a calculator should be one of the easier applications to code. While this project met many of those expectations – I learned calculators use much more logic than I once thought; which ultimately gives me a greater perspective on programming generally. Nothing requiring intent happens accidentally. (I know it’s oxymoronic, but it’s concise and meaningful.)</p>
+                        <p><a href="https://en.wikipedia.org/wiki/Calculator_input_methods" target="_blank">Calculator input methods</a> especially were something I never considered existing. I opted to run formula logic as it seemed a bigger challenge, and also was most convenient to QA with the Windows calculator.</p>
+
+                        <div class="modal-links">
+                            <a href="https://codepen.io/herbivorousape/pen/MWKrdWw" target="_blank">App/Code Link</a>
+                        </div>
+                    </div>
+
+                    <div id="soundboard">
+                        <h3>Soundboard</h3>
+                        <img src="images/soundboard-animation.gif" class="modal-image">
+                        <p><em>&quot;<a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine" target="_blank">Build a drum machine.</a>&quot;</em> They said.</p>
+                        <p>&quot;I don’t have drum noises.&quot; I replied.</p>
+                        <p><em>&quot;All we’re looking for is audio on keypress.&quot;</em></p>
+                        <p>&quot;Fantastic! Yes! This is great. I have just the thing.&quot;</p>
+                        <p>This was a fun one; not just because the only audio I had handy were MP3s from AOE II: Forgotten Empires, but it was my first real React application. </p>
+                        <p>It was extremely satisfying creating something so simple, concise, and scalable.  </p>
+                        <p>So much pulls from a ‘drumpads’ array – the button grid and the bulleted list are both generated based on the information therein. The application designates the assigned key, label/phrase, and location of the audio track. Any items added to this array manifest this information to the grid and list. </p>
+                        <p>It’s not exactly the drum machine intended, but it technically meets all the requirements. A solid minimum viable product ready to accept the client’s next iteration of requests.</p>
+                            
+                        <div class="modal-links">
+                            <a href="https://codepen.io/herbivorousape/pen/YzwYVLd" target="_blank">App/Code Link</a>
+                        </div>
+                    </div>
+
+<!--
+
+                    <div id="pomodoro">
+                        <h3>Pomodoro Clock</h3>
+                        <img src="images/pomodoro-animation.gif" class="modal-image">
+                        <p>A functional pomodoro (tomato) clock.</p>
+                        <div class="modal-links">
+                            <a href="https://codepen.io/herbivorousape/pen/pogLpga" target="_blank">App/Code Link</a>
+                        </div>
+                    </div>
+
+
+                    <div id="treemap">
+                        <h3>Treemap</h3>
+                        <img src="images/treemap-ss.png" class="modal-image">
+                        <p>A treemap of the highest grossing films of all time.</p>
+                        <div class="modal-links">
+                            <a href="https://codepen.io/herbivorousape/pen/qBbzdjE" target="_blank">App/Code Link</a>
+                        </div>
+                    </div>
+
+
+
+                    <div id="choropleth">
+                        <h3>Choropleth</h3>
+                        <img src="images/choropleth-ss.png" class="modal-image">
+                        <p>A choropleth map of the percentage of the population holding bacelor's degrees in the United States.</p>
+                        <div class="modal-links">
+                            <a href="https://codepen.io/herbivorousape/pen/XWXQXVO" target="_blank">App/Code Link</a>
+                        </div>
+                    </div>
+
+-->
+
+
+            </div>
+        </section>
+      <!--  <section id="contact" class="anchor">
+            <h2>Contact and Additional Information</h2>
+            
+            <a href="https://www.linkedin.com/in/jason-bitterman" target="_blank">LinkedIn</a>
+            <a href="https://github.com/HerbivorousApe" target="_blank">GitHub</a>
+            
+        </section>
+    -->
+    </main>
+
+
+
+</body>
+    <script src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/8ab8e8d546.js" crossorigin="anonymous"></script>
+</html>
