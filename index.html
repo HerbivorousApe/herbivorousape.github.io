@@ -17,7 +17,7 @@
                 <p>I am seeking employment as a Software Developer.</p>
                 <p>Thank you for your consideration in viewing my portfolio below.</p>
             </div>
-            <div id="welcome-background"></div>
+            <div id="welcome-background"><a href="images/PIA17256~medium.jpg" target="_blank">.</a></div>
 
         </section>
         <nav id="nav">
@@ -43,6 +43,27 @@
             <h2>Portfolio</h2>
             <p>Below are a few recent projects, most created as part of certification testing.</p>
             <div id="projects">
+                <div class="project" onclick="showModal('weatherthis')">
+                    <h3>Weather This</h3>
+                    <img class="project-image" src="images/WeatherThisWeb-ss.png" alt="Screen Shot for Weather This Web interface">
+                    <p>A simple weather application with multiple views.</p>
+                    <div class="tech-used">
+                        <span class="fa fa-html5 tech-icon"></span>HTML,
+                        <span class="fab fa-css3-alt tech-icon"></span>CSS, 
+                        <span class="fab fa-js-square tech-icon"></span>JS, 
+                        <span class="fab fa-bootstrap tech-icon"></span>Bootstrap.js, 
+                        <span class="tech-icon"><img src="images/jQuery-icon.png"></span>jQuery.js, 
+                        C#
+                    </div>
+                </div>
+                <div class="project" onclick="showModal('mixtape')">
+                    <h3>Mix Tape</h3>
+                    <img class="project-image" src="images/MixTape-ss.png" alt="Screen Shot for the game collection Mix Tape">
+                    <p>A collection of simple C# games via Console.</p>
+                    <div class="tech-used">
+                        C#
+                    </div>
+                </div>
                 <div class="project" onclick="showModal('bugs')">
                     <h3>BUGS!</h3>
                     <img class="project-image" src="images/bugs-ss.png" alt="Screen Shot for the game, BUGS!">
@@ -57,7 +78,7 @@
                         Animate.css
                     </div>
                 </div>
-                <div class="project" onclick="showModal('calculator')">
+ <!--               <div class="project" onclick="showModal('calculator')">
                     <h3>Calculator</h3>
                     <img class="project-image" src="images/calculator-ss.png" alt="Screen Shot for a calculator application.">
                     <p>A basic calculator coded from scratch in React.</p>
@@ -81,7 +102,7 @@
                     </div>
                 </div>
 
-<!--
+
 
                <div class="project" onclick="showModal('pomodoro')">
                     <h3>Pomodoro Clock</h3>
@@ -131,6 +152,30 @@
             <div id="modal" class="fadein">
                 <div id="x"><a onclick="closeModal()">X</a></div>
 
+
+                <div id="weatherthis">
+                    <h3>Weather This</h3>
+                    <img src="images/WeatherThisConsole-ss.png" class="modal-image blackbg">
+                    <p>Weather This is my first attempt to apply MVC design. While I had not worked with MVC before, it always made sense, especially with team supported, enterprise applications.</p>
+                    <p>This is a simple weather app tying to several different APIs to return location based on IP, or zip code, then loading a forecast. Primarily pulling from weather.gov, I found assistive services in ip-api.com and zippopotam.us.</p>
+                    <p>I initially completed a console application and am currently working on a multi-project solution; leaving the console View, moving the Model and Controllers to a ‘Common’ project, and developing a web View. I expect this will soon evolve into my first go at Xamarin.</p>
+                        
+                    <div class="modal-links">
+                        <a href="https://github.com/HerbivorousApe/WeatherThis" target="_blank">Code Link</a>
+                    </div>
+                </div>
+
+                <div id="mixtape">
+                    <h3>Mix Tape</h3>
+                    <img src="images/MixTape-ss.png" class="modal-image blackbg">
+                    <p>Having more thoroughly reacquainted myself with HTML/CSS/JS and exploring the MERN stack; I turned to bolstering my .NET experience. While I worked supporting dozens of applications, I had yet to really apply the fundamentals and create a project of my own from the ground up.</p>
+                    <p>I spun up a quick Mad Lib console application, but wanted to expand a bit. A menu was added, as well as Escape the Maze (text-based adventure), and Wheel of Misfortune, a ‘guess the phrase’ type game. The resulting conglomeration is titled “Mix Tape”.</p>
+                    <p>This is nothing award winning, but I was happy to get an original creation stamped out. Also, happy that I had retained much of what I learned as a Software Engineer. Looking at the code, there are things I would do differently today – and there are some glaring bugs. As I am moving forward, I’m content to let it stand where it is.</p>
+                    <div class="modal-links">
+                        <a href="https://github.com/HerbivorousApe/MixTape" target="_blank">Game/Code Link</a>
+                    </div>
+                </div>
+
                     <div id="bugs">
                         <h3>BUGS!</h3>
                         <img src="images/bugs-animation.gif" class="modal-image">
@@ -147,7 +192,7 @@
                         </div>
                     </div>
 
-                    <div id="calculator">
+<!--                    <div id="calculator">
                         <h3>Calculator</h3>
                         <img src="images/calculator-animation.gif" class="modal-image">
                         <p>&quot;Hello, World!&quot;, the calculator exclaimed. &quot;Hello Calculator&quot;, the world labeled back.</p>
@@ -180,7 +225,7 @@
                         </div>
                     </div>
 
-<!--
+
 
                     <div id="pomodoro">
                         <h3>Pomodoro Clock</h3>
