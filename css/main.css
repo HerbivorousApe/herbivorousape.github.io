@@ -146,7 +146,9 @@ nav {
     height: 12px;
     margin: 0 3px;
 }
-
+ .blackbg {
+  background-color: black;
+ }
 
 
 #projects {
@@ -259,7 +261,7 @@ padding: 10px;
   }
 
 
-#bugs, #calculator, #soundboard, #choropleth, #treemap, #pomodoro, #about-more {
+#bugs, #calculator, #soundboard, #choropleth, #treemap, #pomodoro, #about-more, #mixtape, #weatherthis {
   display: none;
 }
 
